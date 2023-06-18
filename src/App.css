@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --border_color: 2px solid #e6e0e0;
+}
+
+
+body{
+  margin: 0px;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header{
+  padding: 1rem;
+  font-size: 1.2rem;
+  border-bottom: var(--border_color);
+}
+
+#main{
+  /* border: 2px solid black; */
+  height: 100%;
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  padding-inline: 1rem;
+}
+
+#top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#main input[type='text']{
+  width: 15rem;
+  border: none; /* <-- This thing here */
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding: .5rem;
+}
+
+#main input[type='text']:focus{
+  border: none;
+  outline: solid 1px #ccc;
+}
+
+#right_options{
+  cursor: pointer;
+  display: flex;
+  gap: 1rem;
+}
+
+.button{
+  color: white;
+}
+
+label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 8rem;
+  color: white;
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+#bottom{
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+#modal_main{
+  height: 80%;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(193, 175, 175); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(163, 148, 148); 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead{
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+}
+
+table,
+th,
+td {
+  border-block: var(--border_color);
+  padding: 5px;
+  color: #2f2c2c;
+}
+
+th{
+  font-weight: 600;
+  padding-block: .5rem;
+}
+
+td{
+  text-align: center;
+}
+
+.broader_rows{
+  width: 10rem;
+}
+
+#empty{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(174, 197, 174);
+}
+
+footer{
+  margin-top: 1rem;
+  margin-inline: 1rem;
+  padding-inline: 1rem;
+  display: flex;
+  justify-content:space-between ;
+}
+
+#right{
+  display: flex;
+  align-items: center;
+  color: rgb(134, 124, 124);
+}
+
+#main_modal{
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal{
+  border-radius: 5px ;
+  background-color: white;
+  height: 50%;
+  width: 50%;
+  padding: 1rem;
+}
+
+#modal_header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
